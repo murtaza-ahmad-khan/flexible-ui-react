@@ -1,6 +1,6 @@
 {
   "name": "@flexible-ui/monorepo",
-  "private": true,
+  "private": false,
   "workspaces": [
     "packages/*"
   ],

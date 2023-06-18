@@ -3,6 +3,10 @@
   "private": false,
   "version": "1.0.4",
   "type": "module",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -15,5 +19,5 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "gitHead": "e3447d67b438874dc308f0c1252283b9a24b50b2"
+  "gitHead": "aafc0e7c0c4370b46c880f0ae73dd0bb8200c1b2"
 }

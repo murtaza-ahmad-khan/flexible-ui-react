@@ -1,0 +1,40 @@
+{
+  "name": "@flexible-ui/monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.22",
+    "@storybook/addon-interactions": "^7.0.22",
+    "@storybook/addon-links": "^7.0.22",
+    "@storybook/blocks": "^7.0.22",
+    "@storybook/react": "^7.0.22",
+    "@storybook/react-vite": "^7.0.22",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "eslint-plugin-storybook": "^0.6.12",
+    "lerna": "^5.5.2",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.0.22",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9"
+  },
+  "scripts": {
+    "start:vite-common": "lerna run --scope vite-common storybook --stream",
+    "build:vite-common": "lerna run --scope vite-common build --stream",
+    "test:vite-common": "lerna run --scope vite-common test --stream",
+    "start:vite-body": "lerna run --scope vite-body storybook --stream",
+    "build": "lerna run build --stream",
+    "test": "NODE_ENV=test jest --coverage"
+  }
+}
